@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="darrenf1app.f1app.HomeActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/CircuitsButton"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignBottom="@+id/FerrariButton"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/FerrariButton"
+                android:layout_weight="0.07"
+                android:background="@drawable/circuits2"
+                android:text="Circuits"
+                android:textColor="@android:color/white"
+                android:textSize="50sp"
+                android:layout_margin="10dp"/>
+
+            <Button
+                android:id="@+id/DriversButton"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_weight="0.07"
+                android:background="@drawable/fdrivers"
+                android:text="Drivers"
+                android:textColor="@android:color/white"
+                android:textSize="50sp"
+                android:layout_margin="10dp"/>
+
+            <Button
+                android:id="@+id/Teams2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_weight="0.07"
+                android:background="@drawable/mclaren2"
+                android:text="Teams"
+                android:textColor="@android:color/white"
+                android:textSize="50sp"
+                android:layout_margin="10dp"/>
+
+            <Button
+                android:id="@+id/HelpButton"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_weight="0.07"
+                android:background="@drawable/redbull"
+                android:text="HELP"
+                android:textColor="@android:color/white"
+                android:textSize="50sp"
+                android:layout_margin="10dp"/>
+
+            <Button
+                android:id="@+id/AboutButton"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_weight="0.07"
+                android:background="@drawable/ferrari"
+                android:text="ABOUT"
+                android:textColor="@android:color/white"
+                android:textSize="50sp"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

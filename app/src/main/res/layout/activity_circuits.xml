@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="darrenf1app.f1app.Circuits">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:scrollbarStyle="insideOverlay"
+        android:visibility="visible"
+        android:id="@+id/scrollView2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/AustraliaButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:elevation="0dp"
+                android:text="Australia"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/BahrainButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="Bahrain"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/ChinaButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignBaseline="@+id/BahrainButton"
+                android:layout_alignBottom="@+id/BahrainButton"
+                android:layout_toEndOf="@+id/BahrainButton"
+                android:layout_toRightOf="@+id/BahrainButton"
+                android:text="China"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/AzerbaijanButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/AustraliaButton"
+                android:text="AZERBAIJAN"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/SpainButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/ChinaButton"
+                android:layout_toRightOf="@+id/AustraliaButton"
+                android:text="SPAIN"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/MonacoButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/ChinaButton"
+                android:layout_toRightOf="@+id/SpainButton"
+                android:text="Monaco"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/CanadaButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/AzerbaijanButton"
+                android:layout_toLeftOf="@+id/SpainButton"
+                android:layout_toStartOf="@+id/SpainButton"
+                android:text="CANADA"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/FranceButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@+id/BahrainButton"
+                android:layout_alignStart="@+id/BahrainButton"
+                android:layout_below="@+id/MonacoButton"
+                android:text="France"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/AustriaButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/AzerbaijanButton"
+                android:layout_toRightOf="@+id/SpainButton"
+                android:text="Austria"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/BritishButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/CanadaButton"
+                android:text="British"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/GermanyButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@+id/FranceButton"
+                android:layout_alignStart="@+id/FranceButton"
+                android:layout_below="@+id/FranceButton"
+                android:text="germany"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/HungaryButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Hungary"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/BelgiumButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BELGIUM"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/ItalyButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ITALY"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/SingaporeButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Singapore"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/RussiaButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Russia"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <WebView
+        android:id="@+id/circuitView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/scrollView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
